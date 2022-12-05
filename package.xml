@@ -1,0 +1,20 @@
+<package>
+  <name>bad_apple_publisher</name>
+  <version>1.0.0</version>
+  <description>This package contains a ROS node that converts the frames of the Bad Apple music video to OccupancyGrid messages and publishes them.</description>
+
+  <maintainer email="williamwells2013@hotmail.com">William Wells</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>nav_msgs</run_depend>
+
+  <export>
+    <cpp cflags="-std=c++14" lflags="-lopencv_highgui -lopencv_imgproc" />
+  </export>
+</package>
